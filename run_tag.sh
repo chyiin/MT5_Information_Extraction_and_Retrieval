@@ -1,0 +1,14 @@
+python3 main.py --mode train \
+--train_filename dataset/tag/training_dataset.csv \
+--validation_filename dataset/tag/validation_dataset.csv \
+--test_filename dataset/tag/testing_dataset.csv \
+--task tag \
+--batch 2 \
+--epoch 10 \
+--learning_rate 0.0001 \
+--input_length 1024 \
+--output_length 50 \
+--train_size 0.98 \
+--wandb True \
+--seed 42 \
+--gpu 0

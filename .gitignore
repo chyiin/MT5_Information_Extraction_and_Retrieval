@@ -1,0 +1,8 @@
+__pycache__/
+dataset/
+eval/__pycache__/
+eval/tagger/
+mt5-base_QA_DRCD-hug_20211026-170002_QA_DRCD-hug_20211028-134553/
+pipeline/
+venv/
+wandb/
