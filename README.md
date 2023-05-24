@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 
 # Training
-```sh run_product.sh```
+sh run_product.sh ```--mode train```
 ```
 python3 main.py --mode train \
 --train_filename dataset/product/training_dataset.csv \
@@ -30,7 +30,7 @@ python3 main.py --mode train \
 ```
 
 # Inference
-```sh run_product.sh```
+sh run_product.sh ```--mode predict```
 ```
 python3 main.py --mode predict \
 --train_filename dataset/product/training_dataset.csv \
