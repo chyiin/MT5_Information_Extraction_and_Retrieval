@@ -10,7 +10,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Train
+# Training
 ```sh run_product.sh```
 ```
 python3 main.py --mode train \
@@ -29,7 +29,7 @@ python3 main.py --mode train \
 --gpu 1
 ```
 
-Inference
+# Inference
 ```sh run_product.sh```
 ```
 python3 main.py --mode predict \
