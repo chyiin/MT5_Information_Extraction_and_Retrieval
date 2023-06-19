@@ -10,7 +10,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-# Dataset & Tasks
+# Tasks & Datasets
 | Scripts | Datasets | Target |
 |--------|----------|--------|
 | run_product.sh | dataset/product/*.csv | 品名，品牌 |
