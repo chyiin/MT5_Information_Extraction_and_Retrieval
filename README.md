@@ -18,7 +18,6 @@ pip install -r requirements.txt
 | run_post.sh | dataset/post/*.csv | 心得文 |
 | run_tag.sh | dataset/tag/*.csv | 功效：美白，保濕， ... |
 | run_summ.sh | dataset/summ/*.csv | 功效摘要 |
-|
 
 # Training
 sh run_product.sh ```--mode train```
