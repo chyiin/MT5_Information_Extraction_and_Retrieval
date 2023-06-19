@@ -10,6 +10,16 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+# Dataset & Tasks
+| Scripts | Datasets | Target |
+|--------|----------|--------|
+| run_product.sh | dataset/product/*.csv | 品名，品牌 |
+| run_category.sh | dataset/category/*.csv | 種類：精華，化妝水，... |
+| run_post.sh | dataset/post/*.csv | 心得文 |
+| run_tag.sh | dataset/tag/*.csv | 功效：美白，保濕， ... |
+| run_summ.sh | dataset/summ/*.csv | 功效摘要 |
+|
+
 # Training
 sh run_product.sh ```--mode train```
 ```

@@ -1,4 +1,4 @@
-python3 main.py --mode train \
+python3 main.py --mode predict \
 --train_filename dataset/tag/training_dataset.csv \
 --validation_filename dataset/tag/validation_dataset.csv \
 --test_filename dataset/tag/testing_dataset.csv \

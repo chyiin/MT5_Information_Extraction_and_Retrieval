@@ -36,7 +36,7 @@ def parse_args():
     parser.add_argument('--validation_filename', type=str, default='dataset/validation_dataset.csv')
     parser.add_argument('--test_filename', type=str, default='dataset/testing_dataset.csv')
     parser.add_argument('--mode', type=str, default='train', choices=['train', 'predict'])
-    parser.add_argument('--task', type=str, default='summarize', choices=['summarize', 'product', 'tag', 'tag_t2c', 'gpt_summarize', 'category'])
+    parser.add_argument('--task', type=str, default='summarize', choices=['summarize', 'product', 'tag', 'summarize', 'category'])
     parser.add_argument('--batch', type=int, default=2)
     parser.add_argument('--epoch', type=int, default=5)
     parser.add_argument('--learning_rate', type=float, default=0.0001)

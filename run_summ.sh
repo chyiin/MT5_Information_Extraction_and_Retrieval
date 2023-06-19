@@ -1,0 +1,14 @@
+python3 main.py --mode predict \
+--train_filename dataset/summ/training_dataset.csv \
+--validation_filename dataset/summ/validation_dataset.csv \
+--test_filename dataset/summ/testing_dataset.csv \
+--task summarize \
+--batch 2 \
+--epoch 5 \
+--learning_rate 0.0001 \
+--input_length 1024 \
+--output_length 1024 \
+--train_size 0.9 \
+--wandb True \
+--seed 42 \
+--gpu 0
