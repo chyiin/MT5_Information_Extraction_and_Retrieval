@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 ## Data Preprocessing (```db_info.json```)
 
-output format ```.csv```
+Run ```python3 preprocess.py``` ( output format ```.csv``` )
 
 ```
 data = json.load(open('db_info.json'))
