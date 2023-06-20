@@ -10,8 +10,8 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-# Tasks & Datasets
-| Scripts | Datasets | Target |
+## Tasks & Datasets
+| Script | Dataset | Task & Target |
 |--------|----------|--------|
 | run_product.sh | dataset/product/*.csv | 品名，品牌 |
 | run_category.sh | dataset/category/*.csv | 種類：精華，化妝水，... |
@@ -19,7 +19,32 @@ pip install -r requirements.txt
 | run_tag.sh | dataset/tag/*.csv | 功效：美白，保濕， ... |
 | run_summ.sh | dataset/summ/*.csv | 功效摘要 |
 
-# Training
+## Data Preprocessing (```db_info.json```)
+
+output format ```.csv```
+
+```
+data = json.load(open('db_info.json'))
+
+dict_output = preprocess_product(data)
+dict_output = preprocess_category(data)
+dict_output = preprocess_post(data)
+dict_output = preprocess_tag(data)
+```
+
+## Evaluation Metric - Rouge Score ( folder ```eval``` )
+
+Run ```eval/tagger/server.py``` in ```tmux```
+
+```
+cd eval/tagger/
+tmux new -s server
+python3 server.py --port 7373
+```
+
+Exit tmux section ```Ctrl b+d```
+
+## Training
 sh run_product.sh ```--mode train```
 ```
 python3 main.py --mode train \
@@ -38,7 +63,7 @@ python3 main.py --mode train \
 --gpu 1
 ```
 
-# Inference
+## Inference
 sh run_product.sh ```--mode predict```
 ```
 python3 main.py --mode predict \

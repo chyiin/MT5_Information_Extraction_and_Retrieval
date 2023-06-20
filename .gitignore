@@ -1,4 +1,5 @@
 __pycache__/
+data2chatbot/
 dataset/
 eval/__pycache__/
 eval/tagger/
