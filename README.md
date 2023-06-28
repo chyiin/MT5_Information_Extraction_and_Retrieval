@@ -32,6 +32,11 @@ dict_output = preprocess_post(data)
 dict_output = preprocess_tag(data)
 ```
 
+```
+cd dataset
+python3 preprocess.py
+```
+
 ## Evaluation Metric - Rouge Score ( folder ```eval``` )
 
 Run ```eval/tagger/server.py``` in ```tmux```
@@ -39,13 +44,13 @@ Run ```eval/tagger/server.py``` in ```tmux```
 ```
 cd eval/tagger/
 tmux new -s server
-python3 server.py --port 7373
+python3 server.py --port 7777
 ```
 
 Exit tmux section ```Ctrl b+d```
 
 ## Training
-sh run_product.sh ```--mode train```
+sh run_product.sh
 ```
 python3 main.py --mode train \
 --train_filename dataset/product/training_dataset.csv \
@@ -64,7 +69,7 @@ python3 main.py --mode train \
 ```
 
 ## Inference
-sh run_product.sh ```--mode predict```
+sh run_product.sh
 ```
 python3 main.py --mode predict \
 --train_filename dataset/product/training_dataset.csv \

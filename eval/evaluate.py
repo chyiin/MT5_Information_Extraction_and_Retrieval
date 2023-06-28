@@ -13,7 +13,7 @@ class Evaluate:
 
     def __init__(self):
 
-        self.conn = rpyc.classic.connect('localhost', port=7373)
+        self.conn = rpyc.classic.connect('localhost', port=7777)
         self.conn.execute('from ckiptagger import data_utils, construct_dictionary, WS, POS, NER')
         self.conn.execute('ws = WS("./data")')
 
